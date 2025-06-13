@@ -1,38 +1,106 @@
 html {
-	scroll-behavior: smooth;
-	background-color: var(--page-bg);
+  scroll-behavior: smooth;
+  background-color: var(--page-bg);
 }
 
 body {
-	color: var(--text-color);
-	font-family: var(--font-main);
-	text-wrap: balance;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  text-wrap: balance;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 a {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 code {
-	background-color: #e9f1f6;
-	padding: 0.2rem;
-	border-radius: 4px;
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
 }
 
 pre.code {
-	overflow-x: auto;
-	background-color: #e9f1f6;
-	padding: 1rem;
-	border-radius: 4px;
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
 }
 
-td, th {
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
+td,
+th {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
+}
 
+//заголовок результатов
+.title1 {
+  position: relative;
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--link-color);
+  padding-left: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    background-image: url("../../img/svg/linkVector.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.resultTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
+.resultNumber {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.result__btn {
+  position: relative;
+  min-width: 52px;
+  min-height: 42px;
+  border-radius: 30px;
+  background-color: #fff3d1;
+  transition: all 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/svg/arrow-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    background-color: #f0e6c6;
+    transition: all 0.2s ease;
+  }
 }

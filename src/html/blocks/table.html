@@ -1,36 +1,140 @@
 <section class="table">
   <div class="container">
     <div class="table__header">
-      <button class="table__title" type="button" name="Практика">Практика</button>
-      <button class="table__title" type="button" name="ID заявки">ID заявки</button>
-      <button class="table__title" type="button" name="Подрядчик">Подрядчик</button>
-      <button class="table__title" type="button" name="Договорной документ">Договорной документ</button>
-      <button class="table__title" type="button" name="Предмет ДД">Предмет ДД</button>
+      <button class="table__title" type="button" name="Практика">
+        Практика
+      </button>
+      <button class="table__title" type="button" name="ID заявки">
+        ID заявки
+      </button>
+      <button class="table__title" type="button" name="Подрядчик">
+        Подрядчик
+      </button>
+      <button class="table__title" type="button" name="Договорной документ">
+        Договорной документ
+      </button>
+      <button class="table__title" type="button" name="Предмет ДД">
+        Предмет ДД
+      </button>
       <button class="table__title" type="button" name="Смета">Смета</button>
-      <button class="table__title" type="button" name="Документы для оплаты">Документы для оплаты</button>
-      <button class="table__title" type="button" name="Дата оплаты по ДД">Дата оплаты по ДД</button>
-      <button class="table__title" type="button" name="Плановая дата оплаты">Плановая дата оплаты</button>
-      <button class="table__title" type="button" name="Фактич/ согл-я дата оплаты">Фактич/ согл-я дата оплаты</button>
-      <button class="table__title" type="button" name="Сумма платежа">Сумма платежа</button>
-      <button class="table__title" type="button" name="Тип оплаты">Тип оплаты</button>
-      <button class="table__title" type="button" name="Статус оплаты">Статус оплаты</button>
-      <button class="table__title" type="button" name="Договорной документ клиента">Договорной документ клиента</button>
-      <button class="table__title" type="button" name="Документы и дата оплаты клиента план/ факт">Документы и дата оплаты клиента план/ факт</button>
-      <button class="table__title" type="button" name="Статус оплаты и фин. дельта клиента">Статус оплаты и фин. дельта клиента</button>
-      <button class="table__title" type="button" name="Менеджер">Менеджер</button>
-      <button class="table__title" type="button" name="Комментарий">Комментарий</button>
+      <button class="table__title" type="button" name="Документы для оплаты">
+        Документы для оплаты
+      </button>
+      <button class="table__title" type="button" name="Дата оплаты по ДД">
+        Дата оплаты по ДД
+      </button>
+      <button class="table__title" type="button" name="Плановая дата оплаты">
+        Плановая дата оплаты
+      </button>
+      <button
+        class="table__title"
+        type="button"
+        name="Фактич/ согл-я дата оплаты"
+      >
+        Фактич/ <br>согл-я дата оплаты
+      </button>
+      <button class="table__title" type="button" name="Сумма платежа">
+        Сумма платежа
+      </button>
+      <button class="table__title" type="button" name="Тип оплаты">
+        Тип оплаты
+      </button>
+      <button class="table__title" type="button" name="Статус оплаты">
+        Статус оплаты
+      </button>
+      <button
+        class="table__title"
+        type="button"
+        name="Договорной документ клиента"
+      >
+        Договорной документ клиента
+      </button>
+      <button
+        class="table__title"
+        type="button"
+        name="Документы и дата оплаты клиента план/ факт"
+      >
+        Документы и дата оплаты клиента план/ факт
+      </button>
+      <button
+        class="table__title"
+        type="button"
+        name="Статус оплаты и фин. дельта клиента"
+      >
+        Статус оплаты и фин. дельта клиента
+      </button>
+      <button class="table__title" type="button" name="Менеджер">
+        Менеджер
+      </button>
+      <button class="table__title" type="button" name="Комментарий">
+        Комментарий
+      </button>
     </div>
     <section class="results">
       <div class="results__content">
-        <a href="#!" class="results__title" name="promoage" id="promoage">Promoage</a>
-        <div class="results__balanceRub"></div>
-        <div class="results__balanceDol"></div>
-        <div class="results__paymentCurrentDay"></div>
-        <div class="results__balanceAfterCurrentDay"></div>
-        <div class="results__loanBalance"></div>
+        <a class="results__title title1" href="#!" name="promoage" id="promoage"
+          >Promoage</a
+        >
+        <div class="results__balanceRub column">
+          <h2 class="results__balanceRub-title resultTitle">
+            Входящий остаток на р/с, <b>₽</b>
+          </h2>
+          <span class="results__balanceRub-number resultNumber" data-sumnumber1
+            >0,00 ₽</span
+          >
+        </div>
+        <div class="results__balanceDol column">
+          <h2 class="results__balanceDol-title resultTitle">
+            Входящий остаток на р/с, <b>$</b>
+          </h2>
+          <span class="results__balanceDol-number resultNumber" data-sumnumber2
+            >0,00 ₽</span
+          >
+        </div>
+        <div class="results__paymentCurrentDay column">
+          <h2 class="results__paymentCurrentDay-title resultTitle">
+            Оплаты текущего дня, <b>₽</b> <br>(ИТОГО)
+          </h2>
+          <span
+            class="results__paymentCurrentDay-number resultNumber"
+            data-sumnumber3
+            >0,00 ₽</span
+          >
+        </div>
+        <div class="results__balanceAfterCurrentDay resultTitle column">
+          <h2 class="results__balanceAfterCurrentDay-title">
+            Остаток на р/с после оплат <br> текущего дня, <b>₽</b>
+          </h2>
+          <span
+            class="results__balanceAfterCurrentDay-number resultNumber"
+            data-sumnumber4
+            >0,00 ₽</span
+          >
+        </div>
+        <div class="results__loanBalance column">
+          <h2 class="results__loanBalance-title resultTitle">
+            Остаток кредиторской задолженности после <br> оплат текущего дня,
+            <b>₽</b>
+          </h2>
+          <span class="results__loanBalance-number resultNumber" data-sumnumber5
+            >0,00 ₽</span
+          >
+        </div>
+        <!--кнопка открытия/закрытия таблицы-->
+        <button class="result__btn" type="button"></button>
+      </div>
+
+
+      <div class="result__net-result">
+        <p class="result__description">Итого</p>
+        <span class="result__sum-number" data-sumresult
+          >280 000 000,00 <b>₽</b></span
+        >
       </div>
     </section>
-    <!-- <table class="custom-table">
+
+    <!-- таблица с данными -->
+    <table class="custom-table">
       <thead>
         <tr>
           
@@ -38,24 +142,24 @@
       </thead>
       <tbody>
         <tr>
-          <td>Данные 1</td>
-          <td>Данные 2</td>
-          <td>Данные 3</td>
-          <td>Данные 4</td>
-          <td>Данные 5</td>
-          <td>Данные 6</td>
-          <td>Данные 7</td>
-          <td>Данные 8</td>
-          <td>Данные 9</td>
-          <td>Данные 10</td>
-          <td>Данные 11</td>
-          <td>Данные 12</td>
-          <td>Данные 13</td>
-          <td>Данные 14</td>
-          <td>Данные 15</td>
-          <td>Данные 16</td>
-          <td>Данные 17</td>
-          <td class="maxWidth">Данные 18</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="maxWidth"></td>
         </tr>
         <tr>
           <td>Данные 1</td>
@@ -99,6 +203,6 @@
         </tr>
         
       </tbody>
-    </table> -->
+    </table>
   </div>
 </section>

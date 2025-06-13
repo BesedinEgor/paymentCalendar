@@ -1,7 +1,7 @@
 .header {
   margin-top: 25px;
   padding: 8px 0;
-  background-color: #c0e4f4;
+  // background-color: #c0e4f4;
 
   &__row {
     display: flex;
@@ -26,9 +26,11 @@
 
   .button {
     position: relative;
-    padding: 18px 23px;
+    width: 64px;
+    height: 54px;
     border-radius: 30px;
     background-color: var(--white-color);
+    transition: all 0.2s ease;
 
     &::before {
       content: "";
@@ -39,6 +41,11 @@
       height: 19px;
       transform: translate(-50%, -50%);
       background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: #f4f4f4;
+      transition: all 0.2s ease;
     }
   }
 }

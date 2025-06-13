@@ -1,7 +1,20 @@
 .results {
-    background-color: red;
+  border-top: 1px solid var(--text-color);
+  background-color: var(--orange-color);
 }
 .results__content {
+  padding: 4px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .column {
+    min-height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 .results__title {
 }
@@ -14,4 +27,25 @@
 .results__balanceAfterCurrentDay {
 }
 .results__loanBalance {
+}
+.result__net-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--text-color);
+  background-color: #fff3d1;
+}
+.result__description {
+  padding: 4px;
+  width: 55%;
+}
+.result__sum-number {
+  padding: 4px;
+  border-left: 1px solid var(--page-bg);
+  width: 45%;
 }
