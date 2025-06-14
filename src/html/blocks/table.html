@@ -31,7 +31,7 @@
         type="button"
         name="Фактич/ согл-я дата оплаты"
       >
-        Фактич/ <br>согл-я дата оплаты
+        Фактич/ <br />согл-я дата оплаты
       </button>
       <button class="table__title" type="button" name="Сумма платежа">
         Сумма платежа
@@ -70,6 +70,9 @@
         Комментарий
       </button>
     </div>
+
+    <!-- динамическая строка итогов -->
+
     <section class="results">
       <div class="results__content">
         <a class="results__title title1" href="#!" name="promoage" id="promoage"
@@ -93,7 +96,7 @@
         </div>
         <div class="results__paymentCurrentDay column">
           <h2 class="results__paymentCurrentDay-title resultTitle">
-            Оплаты текущего дня, <b>₽</b> <br>(ИТОГО)
+            Оплаты текущего дня, <b>₽</b> <br />(ИТОГО)
           </h2>
           <span
             class="results__paymentCurrentDay-number resultNumber"
@@ -103,7 +106,8 @@
         </div>
         <div class="results__balanceAfterCurrentDay resultTitle column">
           <h2 class="results__balanceAfterCurrentDay-title">
-            Остаток на р/с после оплат <br> текущего дня, <b>₽</b>
+            Остаток на р/с после оплат <br />
+            текущего дня, <b>₽</b>
           </h2>
           <span
             class="results__balanceAfterCurrentDay-number resultNumber"
@@ -113,7 +117,8 @@
         </div>
         <div class="results__loanBalance column">
           <h2 class="results__loanBalance-title resultTitle">
-            Остаток кредиторской задолженности после <br> оплат текущего дня,
+            Остаток кредиторской задолженности после <br />
+            оплат текущего дня,
             <b>₽</b>
           </h2>
           <span class="results__loanBalance-number resultNumber" data-sumnumber5
@@ -124,7 +129,6 @@
         <button class="result__btn" type="button"></button>
       </div>
 
-
       <div class="result__net-result">
         <p class="result__description">Итого</p>
         <span class="result__sum-number" data-sumresult
@@ -134,75 +138,131 @@
     </section>
 
     <!-- таблица с данными -->
-    <table class="custom-table">
-      <thead>
+    <section class="custom-table">
+      <table class="custom-table__info">
+        <colgroup>
+          <col style="width: 74px" />
+          <col style="width: 55px" />
+          <col style="width: 103px" />
+          <col style="width: 76px" />
+          <col style="width: 76px" />
+          <col style="width: 74px" />
+          <col style="width: 78px" />
+          <col style="width: 48px" />
+          <col style="width: 53px" />
+          <col style="width: 57px" />
+          <col style="width: 54px" />
+          <col style="width: 60px" />
+          <col style="width: 60px" />
+          <col style="width: 89px" />
+          <col style="width: 81px" />
+          <col style="width: 71px" />
+          <col style="width: 60px" />
+          <col style="width: 150px" />
+        </colgroup>
+
+        <!-- Первая строка -->
         <tr>
-          
+          <td>Практика аналитики и исследований</td>
+          <td>
+            <a class="link" href="#!">10919 от 10.10 2025</a>
+          </td>
+          <td class="link">
+            <a class="link" href="#!">ИП Галушкин О.А.</a>
+          </td>
+          <td class="split-container">
+            <div class="split-cell">
+              <a class="cell-part link" href="#!" style="flex: 0.5">П №1</a>
+              <div class="cell-part" style="flex: 0.5">
+                ДД подписан с двух сторон
+              </div>
+            </div>
+          </td>
+          <td>Предмет ДД</td>
+          <td>
+            <a class="link" href="#!">Колесо любви</a>
+          </td>
+          <td>
+            <a class="link" href="#!">Счет №27 от 01.01.2025</a>
+          </td>
+          <td>07.03.2024</td>
+          <td>10.03.2025</td>
+          <td>12.03.2025</td>
+          <td>200 000 000,00</td>
+          <td class="split-container">
+            <div class="split-cell">
+              <a class="cell-part link" href="#!" style="flex: 0.5">Аванс</a>
+              <div class="cell-part" style="flex: 0.5">Баланс про</div>
+            </div>
+          </td>
+          <td class="split-container">
+            <div class="split-cell">
+              <div class="cell-part" style="flex: 0.5">Оплачено</div>
+              <a class="cell-part" href="#!" style="flex: 0.5">ПП</a>
+            </div>
+          </td>
+          <td class="split-container">
+            <div class="split-cell">
+              <a class="cell-part link" href="#!" style="flex: 0.5"
+                >ГНП-12/090с...</a
+              >
+              <div class="cell-part" style="flex: 0.5">
+                ДД подписан с двух сторон
+              </div>
+            </div>
+          </td>
+          <td class="split-container">
+            <div class="split-cell">
+              <a class="cell-part link" href="#!" style="flex: 0.5"
+                >Счет №7 от 01.01.2025</a
+              >
+              <div class="cell-part" style="flex: 0.5">10.03.2025</div>
+            </div>
+          </td>
+          <td class="split-container">
+            <div class="split-cell">
+              <div class="cell-part" style="flex: 0.5">Оплачено</div>
+              <div class="cell-part" style="flex: 0.5">3</div>
+            </div>
+          </td>
+          <td>Иванов И.И.</td>
+          <td>Задержали - не сделали работы</td>
         </tr>
-      </thead>
-      <tbody>
+
+        <!-- Вторая строка -->
         <tr>
           <td></td>
+          <td>
+            <input type="text" class="cell-input" value="Пример текста" />
+          </td>
+          <td></td>
+          <td></td>
+          <td class="split-container">
+            <div class="split-cell">
+              <div class="cell-part" style="flex: 0.3">X</div>
+              <div class="cell-part" style="flex: 0.7">Y</div>
+            </div>
+          </td>
           <td></td>
           <td></td>
           <td></td>
           <td></td>
+          <td><input type="text" class="cell-input" placeholder="Число" /></td>
           <td></td>
           <td></td>
           <td></td>
+          <td>K</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="maxWidth"></td>
+          <td class="split-container">
+            <div class="split-cell">
+              <div class="cell-part" style="flex: 0.5">A</div>
+              <div class="cell-part" style="flex: 0.5">B</div>
+            </div>
+          </td>
         </tr>
-        <tr>
-          <td>Данные 1</td>
-          <td>Данные 2</td>
-          <td>Данные 3</td>
-          <td>Данные 4</td>
-          <td>Данные 5</td>
-          <td>Данные 6</td>
-          <td>Данные 7</td>
-          <td>Данные 8</td>
-          <td>Данные 9</td>
-          <td>Данные 10</td>
-          <td>Данные 11</td>
-          <td>Данные 12</td>
-          <td>Данные 13</td>
-          <td>Данные 14</td>
-          <td>Данные 15</td>
-          <td>Данные 16</td>
-          <td>Данные 17</td>
-          <td>Данные 18</td>
-        </tr>
-        <tr>
-          <td>Данные 1</td>
-          <td>Данные 2</td>
-          <td>Данные 3</td>
-          <td>Данные 4</td>
-          <td>Данные 5</td>
-          <td>Данные 6</td>
-          <td>Данные 7</td>
-          <td>Данные 8</td>
-          <td>Данные 9</td>
-          <td>Данные 10</td>
-          <td>Данные 11</td>
-          <td>Данные 12</td>
-          <td>Данные 13</td>
-          <td>Данные 14</td>
-          <td>Данные 15</td>
-          <td>Данные 16</td>
-          <td>Данные 17</td>
-          <td>Данные 18</td>
-        </tr>
-        
-      </tbody>
-    </table>
+      </table>
+    </section>
   </div>
 </section>

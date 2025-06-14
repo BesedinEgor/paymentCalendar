@@ -4,6 +4,8 @@
   justify-content: flex-start;
   column-gap: 4px;
   padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: var(--white-color);
 }
 
@@ -223,37 +225,86 @@
   }
 }
 
+//реализация кастомной таблицы с данными
+
+/* Основные стили таблицы */
 .custom-table {
-  width: 100%;
   table-layout: fixed;
+  width: 100%;
+}
+
+.custom-table__info {
+  width: 100%;
   border-collapse: collapse;
 }
 
-.maxWidth {
-  min-width: 176px;
+/* Стили для ячеек */
+.custom-table tr {
+  border-top: 4px solid var(--page-bg);
+  border-bottom: 4px solid var(--page-bg);
 }
 
-.custom-table thead {
-  background-color: var(--white-color);
-}
-
-.custom-table thead th {
-  padding: 3px;
+.custom-table td {
+  background-color: white;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow: hidden;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 10px;
-  text-wrap: pretty;
-  text-align: left;
-  color: #000;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #e0e0e0;
+  color: var(--text-color);
+
+  &:not(:last-child) {
+    border-right: 1px solid var(--page-bg);
+  }
 }
 
-.custom-table tbody td {
-  padding: 10px 8px;
-  border-right: 1px solid var(--page-bg);
-  border-left: 1px solid var(--page-bg);
-  border-top: 4px solid var(--page-bg);
-  border-bottom: 4px solid var(--page-bg);
-  background-color: var(--white-color);
+/* Специальный класс для ячеек с разделением */
+.split-container {
+  padding: 0;
+}
+
+/* Контейнер для разделенных ячеек */
+.split-cell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Части разделенной ячейки */
+.cell-part {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: center;
+
+  &:first-child{
+    border-bottom: 1px solid var(--page-bg);
+  }
+}
+
+
+
+/* Вертикальный разделитель между частями */
+// .cell-part:not(:last-child)::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   height: 100%;
+//   width: 1px;
+//   background-color: #808080;
+// }
+
+/* Стили для инпутов */
+input.cell-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  padding: 3px;
+  font-size: 12px;
 }
